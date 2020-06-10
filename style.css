@@ -1,0 +1,338 @@
+*{	
+	box-sizing: border-box;
+	margin: 0px;
+	font-family: Montserrat;
+}
+
+
+
+.grid {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 8% 92%;
+	grid-template-areas:
+	"topbar"
+	"mainbody";
+  	width: 100vw;
+  	height: 100vh;
+}
+
+.topbar {
+	grid-area: topbar;
+	/*background-color: lightgrey;*/
+	border-bottom: solid #000;
+	border-width: 0 1px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
+
+.navbar {
+	position: relative;
+    padding: .5rem 1rem;
+}
+
+.flexbox-container {
+	/*background-color: green;*/
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 90%;
+}
+
+./*flexbox-item-1 {
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+}*/
+
+.flexbox-item-1 {
+	justify-content: center;
+	align-items: center;
+	/*width: 10%;*/
+	/*background-color: red;*/
+
+}
+
+.mainbody {
+	grid-area: mainbody;
+	display: grid;
+	grid-template-columns: 25% 1fr;
+	grid-template-areas: 
+	"sidenav workcontainer";
+	border: 1px solid #000;
+}
+
+.sidenav {
+	grid-area: sidenav;
+	/*background-color: lightgreen;*/
+	justify-self: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+	/*padding-top: 50px;*/
+	margin-left: 45px;
+	/*justify-content: space-evenly;*/
+}
+
+.workcontainer {
+	grid-area: workcontainer;
+	/*background-color: lightblue;*/
+	display: flex;
+	justify-content: center;
+	/*align-self: center;*/
+	justify-self: center;
+	/*background-color: lightblue;*/
+	width: 100%;
+}
+
+.logo {
+	/*background-color: lightblue;*/
+	margin-left: 25px;
+}
+
+.toplinks {
+	/*background-color: lightblue;*/
+	/*font-family: "Times New Roman";*/
+	/*font-weight:700;*/
+}
+
+li {
+	list-style-type: none;
+}
+
+header li {
+	display: inline;
+}
+
+#links .top-link {
+	margin: 0 50px 0 0;
+	/*font-weight: bold;*/
+	font-family: "Heebo";
+	font-weight: 500;
+	letter-spacing: 0.05em;
+}
+
+.profilepic {
+	 border-radius: 50%;
+	 margin-bottom: 25px;
+}
+
+.about {
+	max-width: 225px;
+	font-size: 18px;
+}
+
+.info {
+	margin-top: 75px;
+	margin-bottom: 25px;
+}
+
+.name {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-family: Heebo;
+	letter-spacing: 0.05em;
+}
+
+.navcontainer {
+	
+}
+
+.navbox {
+	line-height: 35px;
+}
+
+.navbox > a {
+	display: block;
+	font-size: 24px;
+	font-weight: 600;
+	font-family: Montserrat;
+}
+
+.work {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/*margin: 100px 0px 20px 0px;*/
+	/*background-color: lightgreen;*/
+}
+
+.work > h1 {
+	align-self: end;
+	margin-bottom: 15px;
+}
+
+p {
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+
+a:hover {
+	background-color: orange;
+	/*background-image: linear-gradient(45deg, #f3ec78, #af4261);*/
+	background-image:linear-gradient(to right top, rgb(219, 112, 147), rgb(218, 163, 87));
+	background-size: 100%;
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent; 
+  	-moz-background-clip: text;
+  	-moz-text-fill-color: transparent;
+	/*text-fill-color: transparent;*/
+	/*color: linear-gradient(to bottom right, red, yellow);*/
+}
+
+.active {
+	text-decoration: line-through;
+}
+/*#particles-js {
+    position : absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    background: red;
+}*/
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: -1;
+}
+
+/*hr {
+    border-color: #033649;
+    border-width: 2px;
+    width: 175px;
+    align-self: end;
+}*/
+
+/* ------------- Page 2 ---------------*/
+
+.port {
+	display: flex;
+    flex-wrap: wrap;
+    /*flex-direction: row;*/
+    /*background-color: blue;*/
+    width: 100%;
+    /*display: flex;*/
+ 	/*flex-wrap: wrap;*/
+  	flex-direction: row;
+	justify-content: center;
+	}	
+
+.port-container {
+	/*background-color: red;*/
+	display: flex;
+    /*flex-wrap: wrap;*/
+    flex-flow: row wrap;
+    height: 75%;
+    width: 80%;
+    /*flex-direction: row;*/
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+    
+    /*margin-bottom: 120px;*/
+    /*flex: 1 1 50%;*/
+}
+
+.card {
+	display: flex;
+	width: calc(50% - 16px);
+	/*flex-basis: calc(50% - 100px); */
+    color: inherit;
+    justify-content: center;
+  	flex-direction: row;
+    /*display: block;*/
+    /*margin: 4px 4px 8px;*/
+    /*border: solid;*/
+    /*background: linear-gradient(to right top, rgb(219, 112, 147), rgb(218, 163, 87)) rgb(255, 255, 255);*/
+    /*border-radius: 5px;*/
+    height: 35%;
+    /*font-size: 16px;*/
+    /*align-self: space-between;*/
+    /*flex: 1 1 50%;*/
+}
+
+.word-container {
+	/*display:box;*/
+	/*display: flex;*/
+	/*padding: 25px;*/
+	/*height: inherit;*/
+	/*flex-direction: column;*/
+	display: block;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px 0px;
+    position: relative;
+    border-radius: 5px;
+    background: transparent;
+
+}
+
+.word-wrapper {
+	padding: 25px;
+    background: linear-gradient(to right top, rgb(219, 112, 147), rgb(218, 163, 87)) rgb(255, 255, 255);
+	height: 100%;
+	border-radius: 5px;
+}
+
+.con-wrap {
+	display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.title {
+	/*margin-top: 20px*/
+}
+
+.description {
+	margin-top: 8px;
+	margin-bottom:24px;
+}
+
+/*fa-html5 {
+	font-size: 10em;
+	color: black;
+}*/
+
+.purple {
+	background: -webkit-linear-gradient(bottom left, rgb(114, 19, 251), rgb(79, 22, 238)) rgb(255, 255, 255);
+	background: -o-linear-gradient(bottom left, rgb(114, 19, 251), rgb(79, 22, 238)) rgb(255, 255, 255);
+	background: linear-gradient(to top right, rgb(114, 19, 251), rgb(79, 22, 238)) rgb(255, 255, 255);
+}
+
+.silver {
+	background: -webkit-linear-gradient(top left, rgb(109, 110, 114), rgb(158, 160, 166)) rgb(255, 255, 255);
+	background: -o-linear-gradient(top left, rgb(109, 110, 114), rgb(158, 160, 166)) rgb(255, 255, 255);
+	background: linear-gradient(to bottom right, rgb(109, 110, 114), rgb(158, 160, 166)) rgb(255, 255, 255);
+}
+
+.white {
+	background: white;
+}
+
+
+
+
+
+
+
+
+
+
+
